@@ -1,0 +1,8 @@
+Disease: disease_data_matrix.txt
+Control: control_data_matrix.txt
+Microarray: microarray.expression.txt
+Membrane: membrane_association.txt
+CD: cd_family.txt
+CancerTestis: cancer_testis.txt
+Protein: protein.txt
+Name: example_newCAR_run
