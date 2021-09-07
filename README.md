@@ -53,6 +53,4 @@ The name of the `newCAR.R` run (line 9 of the configuration file) is used to cre
 | `$name.TopTargets.txt`           | TAAs that have met the criteria described in our workflow that are ready to be subjected to manual review                                             |
 
 ## Maintainers
-
-* [Patrick Schreiner](https://github.com/pschreiner)
-* [Yiping Fan](https://www.stjude.org/directory/f/yiping-fan.html)
+[Patrick Schreiner](https://github.com/pschreiner) and [Yiping Fan](https://www.stjude.org/directory/f/yiping-fan.html)
