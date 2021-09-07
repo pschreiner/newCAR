@@ -1,5 +1,5 @@
 # newCAR
-Immunotherapy relies heavily upon the identification of an TAAs which are highly expressed and tumor-specific.  To identify suitable TAAs, newCAR.R compares RNA and protein expression between tumor and control samples. Users must provide data matrices for tumor and control to determine TAAs. Tumor and control datasets can be from different data cohorts, or even different platforms (e.g. RNA-seq vs microarray), since gene expression value transformations are performed to make the distribution of expression values equivalent.
+Immunotherapy relies heavily upon the identification of a tumor-associated antigens (TAAs) which are highly expressed and tumor-specific.  To identify suitable TAAs, newCAR.R compares RNA and protein expression between tumor and control samples. Users must provide data matrices for tumor and control to determine TAAs. Tumor and control datasets can be from different data cohorts, or even different platforms (e.g. RNA-seq vs microarray), since gene expression value transformations are performed to make the distribution of expression values equivalent.
 
 newCAR allows for reproducibility of the workflow that we used to predict tumor-associated antigens in pediatric AMKL.  A function to perform the Weighted Cumulative Percentage (WCP) data transformation is also available in this repository to unify heterogenous data.
 
@@ -29,13 +29,13 @@ The configuration file should contain 9 lines in the following order:
 | ------------------------------------ | ------------------------------------------------------------------------------------ |
 | 1. Disease                           | [Expression Value Matrix](./reference_files/Example_Disease-Value_Matrix.xls)        |
 | 2. Control                           | [Expression Value Matrix](./reference_files/Example_Control-Value_Matrix.xls)        |
-| 3. Microarray                        | [Expression Value Matrix](./reference_files/Example_Control-Value_Matrix.xls)        |
-| 4. Microarray                        | [Gene Status Matrix](./reference_files/Example_Control-Status_Matrix.xls)            |
-| 5. Gene Membrane Association File    | [Gene Membrane Association File](./reference_files/MembraneAssociated-Reference.xls) |
-| 6. CD Family Identification File     | [CD Family Identification File](./reference_files/CD_Family-Reference.xls)           |
-| 7. Cancer-Testis Gene Reference File | [Cancer-Testis Gene Reference File](./reference_files/CancerTestis-Reference.xls)    |
-| 8. Protein Expression Data           | [Protein Expression Data](./reference_files/ProteinExpression-Reference.xls)         |
-| 9. Name of Run                       | example_run                                                                          |
+| 3. Microarray Expression             | [Expression Value Matrix](./reference_files/Example_Control-Value_Matrix.xls)        |
+| 4. Microarray Detection (Optional)   | [Gene Status Matrix](./reference_files/Example_Control-Status_Matrix.xls)            |
+| 5. Gene Membrane Association File    | [Tab 1](Supp_table1.Reference_data.xlsx) |
+| 6. Cancer-Testis Gene Reference File | [Tab 2](Supp_table1.Reference_data.xlsx)    |
+| 7. CD Family Identification File     | [Tab 3](Supp_table1.Reference_data.xlsx)           |
+| 8. Protein Expression Data           | [Tab 4](Supp_table1.Reference_data.xlsx)         |
+| 9. Name of Run                       | example_name                                                                          |
 
 An configuration file [example](config.txt) is provided.  If you do not wish to provide any of the __optional__ files above, put "NA" on the corresponding line in your configuration file. Though the files have the `.xls` extension, they are tab delimited and can be edited as such.
 
@@ -44,14 +44,15 @@ The name of the `newCAR.R` run (line 9 of the configuration file) is used to cre
 
 | Output                        | Description                                                                                                            |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `$name~AllMetrics`           | a. All metrics observed in the intersection of genes in tumor and control data matrices                                |
-| `$name~MembraneGenes`        | b. Metrics observed for genes with any association to plasma membrane localization                                     |
-| `$name~Membrane_Ensembl`     | c. Metrics observed for genes with association to plasma membrane localization in Ensembl                              |
-| `$name~Membrane_HPRD`        | d. Metrics observed for genes with association to plasma membrane localization in the Human Protein Reference Database |
-| `$name~CD_Family`            | e. CD family TAAs                                                                                                      |
-| `$name~CTgenes`              | f. Cancer-testis TAAs                                                                                                  |
-| `$name~AllCriteriaSatisfied` | g. TAAs satisfying criteria in files `a-f`                                                                             |
-| `$name~TopTargets`           | h. TAAs in file `g` after p-value and expression filters have been applied                                             |
+| `Disease.TEVs.txt`               | Disease transformed expression values used for TAA prediction |
+| `Control.TEVs.txt`               | Control transformed expression values used for TAA prediction |
+| `$name.Detection_Calling_Summary.txt` | If microarray detection information is provided, this file contains the number of samples for which each gene was predicted to be present or absent |
+| `$name.AllMetrics.txt`           | Reports all genes considered and their corresponding metrics for TAA prediction                                |
+| `$name.MembraneGenes.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl)                              |
+| `$name.MembraneGenes_p05.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl) with a p-value < 0.05                             |
+| `$name.CD_Family.txt`            | TAAs in the CD family                                                                                                      |
+| `$name.CTgenes.txt`              | TAAs in the Cancer-testis family                                                                                                  |                                                                          |
+| `$name.TopTargets.txt`           | TAAs that have met the criteria described in our workflow that are ready to be subjected to manual review                                             |
 
 ## Maintainers
 
