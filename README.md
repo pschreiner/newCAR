@@ -25,7 +25,7 @@ The configuration file should contain 9 lines in the following order:
 
 | Value                                | Description                                                                          |
 | ------------------------------------ | ------------------------------------------------------------------------------------ |
-| 1. Disease                           | [Example Disease Matrix](./example_matrices/data_data_example.txt)        |
+| 1. Disease                           | [Example Disease Matrix](./example_matrices/disease_data_example.txt)        |
 | 2. Control                           | [Example Control Matrix](./example_matrices/control_data_example.txt)        |
 | 3. Microarray Expression             | [Example Microarray Expression Matrix](./example_matrices/microarray_expression_example.txt)        |
 | 4. Microarray Detection (Optional)   | [Example Microarray Detection Matrix](./example_matrices/microarray_detection_example.txt)            |
