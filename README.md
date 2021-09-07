@@ -55,3 +55,4 @@ The name of the `newCAR.R` run (line 9 of the configuration file) is used to cre
 ## Maintainers
 
 * [Patrick Schreiner](https://github.com/pschreiner)
+* [Yiping Fan](https://www.stjude.org/directory/f/yiping-fan.html)
