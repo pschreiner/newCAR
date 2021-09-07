@@ -1,9 +1,7 @@
 # newCAR
+Immunotherapy relies heavily upon the identification of an TAAs which are highly expressed and tumor-specific.  To identify suitable TAAs, newCAR.R compares RNA and protein expression between tumor and control samples. Users must provide data matrices for tumor and control to determine TAAs. Tumor and control datasets can be from different data cohorts, or even different platforms (e.g. RNA-seq vs microarray), since gene expression value transformations are performed to make the distribution of expression values equivalent.
+
 newCAR allows for reproducibility of the workflow that we used to predict tumor-associated antigens in pediatric AMKL.  A function to perform the Weighted Cumulative Percentage (WCP) data transformation is also available in this repository to unify heterogenous data.
-
-Immunotherapy relies heavily upon the identification of an TAAs which are highly expressed and tumor-specific.  To identify suitable TAAs, newCAR.R compares RNA and protein expression between tumor and control samples.
-
-Users must provide data matrices for tumor and control to determine TAAs. Tumor and control datasets can be from different data cohorts, or even different platforms (e.g. RNA-seq vs microarray), since gene expression value transformations are performed to make the distribution of expression values equivalent.
 
 ## Installation
 Install `newCAR.R` by unpacking the source code to a working directory.
