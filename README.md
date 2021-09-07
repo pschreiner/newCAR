@@ -14,8 +14,6 @@ Install `newCAR.R` by unpacking the source code to a working directory.
     * [preprocessCore](https://bioconductor.org/packages/release/bioc/html/preprocessCore.html) ~1.44.0
     * [plyr](https://www.rdocumentation.org/packages/plyr/versions/1.8.4) ~1.8.4
 
-**Note**: Tumor and control expression values are necessary, but not provided in this package, in order to identify TAAs.
-
 ## Usage
 ```bash
 Rscript newCAR.R config.txt
