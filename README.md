@@ -37,7 +37,7 @@ The configuration file should contain 9 lines in the following order:
 | 8. Protein Expression Data           | [Tab 4](Supp_table1.Reference_data.xlsx)         |
 | 9. Name of Run                       | example_name                                                                          |
 
-An configuration file [example](config.txt) is provided.  If you do not wish to provide any of the __optional__ files above, put "NA" on the corresponding line in your configuration file. Though the files have the `.xls` extension, they are tab delimited and can be edited as such.
+An configuration file [example](example_config.txt) is provided.  If you do not wish to provide any of the __optional__ files above, put "NA" on the corresponding line in your configuration file. Though the files have the `.xls` extension, they are tab delimited and can be edited as such.
 
 ### Output
 The name of the `newCAR.R` run (line 9 of the configuration file) is used to create an output directory.  The output directory contains *data matrices* and *boxplots* regarding the following TAAs:
