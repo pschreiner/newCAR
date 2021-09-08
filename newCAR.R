@@ -279,9 +279,9 @@ summary_res <- bplapply(1:nrow(res),function(i) {
 	nodis_max <- max(as.numeric(res[i,1:ncol(nodis)]))	
 
 	if(	any(grepl("Aorta",colnames(nodis),fixed=TRUE)) | 
-		any(grepl("Aorta",colnames(nodis),fixed=TRUE)) | 
-		any(grepl("Aorta",colnames(nodis),fixed=TRUE)) |
-		any(grepl("Aorta",colnames(nodis),fixed=TRUE))
+		any(grepl("Coronary",colnames(nodis),fixed=TRUE)) | 
+		any(grepl("Brain",colnames(nodis),fixed=TRUE)) |
+		any(grepl("Heart",colnames(nodis),fixed=TRUE))
 	) {
 		inds <- which(nodis[i,]>nd_med)
 		if(length(inds) == 0) {
