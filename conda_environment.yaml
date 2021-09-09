@@ -1,0 +1,13 @@
+name:  conda-env-newCAR
+channels:
+  - conda-forge
+  - r
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-biocparallel
+  - r=3.6
+  - bioconductor-preprocesscore
+  - r-plyr
+  - libopenblas=0.3.3
+prefix: conda-env-newCAR
