@@ -23,15 +23,15 @@ Rscript newCAR.R config.txt
 #### Configuration File
 The configuration file should contain 9 lines in the following order:
 
-| Value                                |  Source   | Description                                                                          |
+| Value                                |  Source | Description                                                                          |
 | ------------------------------------ | ------------------------------------------------------------------------------------ |
-| 1. Disease                           |           | [Example Disease Data Matrix](./example_matrices/disease_data_example.txt)        |
-| 2. Control                           |           | [Example Control Data Matrix](./example_matrices/control_data_example.txt)        |
-| 3. Microarray Expression             |           | [Example Microarray Expression Data Matrix](./example_matrices/microarray_expression_example.txt)        |
-| 4. Microarray Detection (Optional)   |           | [Example Microarray Detection Data Matrix](./example_matrices/microarray_detection_example.txt)            |
-| 5. [Gene Membrane Association File](./reference_information/membrane_association.txt)    |    Gene Ontology   | Information regarding whether or not a gene has been associated with the plasma membrane |
+| 1. Disease                           |   NA        | [Example Disease Data Matrix](./example_matrices/disease_data_example.txt)        |
+| 2. Control                           |   NA      | [Example Control Data Matrix](./example_matrices/control_data_example.txt)        |
+| 3. Microarray Expression             |   NA      | [Example Microarray Expression Data Matrix](./example_matrices/microarray_expression_example.txt)        |
+| 4. Microarray Detection (Optional)   |   NA      | [Example Microarray Detection Data Matrix](./example_matrices/microarray_detection_example.txt)            |
+| 5. [Gene Membrane Association File](./reference_information/membrane_association.txt)    |    [Gene Ontology](http://geneontology.org/)   | Information regarding whether or not a gene has been associated with the plasma membrane |
 | 6. [Cancer-Testis Gene Reference File](./reference_information/cancer_testis.txt) |  [Peer-reviewed publication](https://www.nature.com/articles/ncomms10499)   | Information regarding whether or not a gene is a known cancer-testis antigen    |
-| 7. [CD Family Identification File](./reference_information/cd_family.txt)     |      | Information regarding whether or not a gene is a member of the CD family          |
+| 7. [CD Family Identification File](./reference_information/cd_family.txt)     |   [HGNC](https://www.genenames.org/data/genegroup/#!/group/471)   | Information regarding whether or not a gene is a member of the CD family          |
 | 8. [Protein Expression Data](./reference_information/protein.txt)    |   [HPA](https://www.proteinatlas.org/about/download)       | Protein expression information        |
 | 9. Name of Run                       | example_name                                                                          |
 
