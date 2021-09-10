@@ -44,13 +44,13 @@ The name of the `newCAR.R` run (line 9 of the configuration file) is used to cre
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `Disease.TEVs.txt`               | Disease transformed expression values used for TAA prediction |
 | `Control.TEVs.txt`               | Control transformed expression values used for TAA prediction |
-| `$name.Detection_Calling_Summary.txt` | If microarray detection information is provided, this file contains the number of samples for which each gene was predicted to be present or absent |
-| `$name.AllMetrics.txt`           | Reports all genes considered and their corresponding metrics for TAA prediction                                |
-| `$name.MembraneGenes.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl)                              |
-| `$name.MembraneGenes_p05.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl) with a p-value < 0.05                             |
-| `$name.CD_Family.txt`            | TAAs in the CD family                                                                                                      |
-| `$name.CTgenes.txt`              | TAAs in the Cancer-testis family                                                                                                  |                                                                          |
-| `$name.TopTargets.txt`           | TAAs that have met the criteria described in our workflow that are ready to be subjected to manual review                                             |
+| `Detection_Calling_Summary.txt` | If microarray detection information is provided, this file contains the number of samples for which each gene was predicted to be present or absent |
+| `AllMetrics.txt`           | Reports all genes considered and their corresponding metrics for TAA prediction                                |
+| `MembraneGenes.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl)                              |
+| `MembraneGenes_p05.txt`     | Reports all genes considered and their corresponding metrics for TAA prediction for membrane-associated genes (as defined in Ensembl) with a p-value < 0.05                             |
+| `CD_Family.txt`            | TAAs in the CD family                                                                                                      |
+| `CTgenes.txt`              | TAAs in the Cancer-testis family                                                                                                  |                                                                          |
+| `TopTargets.txt`           | TAAs that have met the criteria described in our workflow that are ready to be subjected to manual review                                             |
 
 ## Maintainers
 [Patrick Schreiner](https://github.com/pschreiner) and [Yiping Fan](https://www.stjude.org/directory/f/yiping-fan.html)
