@@ -29,10 +29,10 @@ The configuration file should contain 9 lines in the following order:
 | 2. Control                           | [Example Control Matrix](./example_matrices/control_data_example.txt)        |
 | 3. Microarray Expression             | [Example Microarray Expression Matrix](./example_matrices/microarray_expression_example.txt)        |
 | 4. Microarray Detection (Optional)   | [Example Microarray Detection Matrix](./example_matrices/microarray_detection_example.txt)            |
-| 5. Gene Membrane Association File    | [Tab 1](Supp_table1.Reference_data.xlsx) |
-| 6. Cancer-Testis Gene Reference File | [Tab 2](Supp_table1.Reference_data.xlsx)    |
-| 7. CD Family Identification File     | [Tab 3](Supp_table1.Reference_data.xlsx)           |
-| 8. Protein Expression Data           | [Tab 4](Supp_table1.Reference_data.xlsx)         |
+| 5. [Gene Membrane Association File](./reference_information/membrane_association.txt)    | Information regarding whether or not a gene has been associated with the plasma membrane |
+| 6. [Cancer-Testis Gene Reference File](./reference_information/cancer_testis.txt) | Information regarding whether or not a gene is a known cancer-testis antigen    |
+| 7. [CD Family Identification File](./reference_information/cd_family.txt)     | Information regarding whether or not a gene is a member of the CD family          |
+| 8. [Protein Expression Data](./reference_information/protein.txt)           | Protein expression information (from the [HPA](https://https://www.proteinatlas.org/about/download))        |
 | 9. Name of Run                       | example_name                                                                          |
 
 An configuration file [example](example_config.txt) is provided.
