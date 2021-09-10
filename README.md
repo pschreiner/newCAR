@@ -33,7 +33,7 @@ The configuration file should contain 9 lines in the following order:
 | 6. [Cancer-Testis Gene Reference File](./reference_information/cancer_testis.txt) |  [Peer-reviewed publication](https://www.nature.com/articles/ncomms10499)   | Information regarding whether or not a gene is a known cancer-testis antigen    |
 | 7. [CD Family Identification File](./reference_information/cd_family.txt)     |   [HGNC](https://www.genenames.org/data/genegroup/#!/group/471)   | Information regarding whether or not a gene is a member of the CD family          |
 | 8. [Protein Expression Data](./reference_information/protein.txt)    |   [HPA](https://www.proteinatlas.org/about/download)       | Protein expression information        |
-| 9. Name of Run                       | example_name                                                                          |
+| 9. Name of Run                       |  | example_name                                                                          |
 
 An configuration file [example](example_config.txt) is provided.
 
